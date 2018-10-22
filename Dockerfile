@@ -4,7 +4,7 @@
 
 FROM python:3.6-stretch
 
-LABEL maintainer "Shinichi Nakagawa <spirits.is.my.rader@gmail.com>"
+LABEL maintainer "Sumeet Gautam <sumeet.digitall@gmail.com>"
 
 # airflow env
 ENV AIRFLOW_USER=airflow

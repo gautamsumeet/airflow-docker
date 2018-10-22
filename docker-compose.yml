@@ -5,7 +5,7 @@ services:
       context: ./
       dockerfile: airflow_dag_sample/DockerfileExample
     container_name: airflow_webserver
-    env_file: ./env_example_docker-compose
+    env_file: ./env_docker-compose
     ports:
       - "8080:8080"
     restart: always
@@ -15,7 +15,7 @@ services:
       context: ./
       dockerfile: airflow_dag_sample/DockerfileExample
     container_name: airflow_scheduler
-    env_file: ./env_example_docker-compose
+    env_file: ./env_docker-compose
     restart: always
     depends_on:
       - webserver
@@ -25,7 +25,7 @@ services:
       context: ./
       dockerfile: airflow_dag_sample/DockerfileExample
     container_name: airflow_worker
-    env_file: ./env_example_docker-compose
+    env_file: ./env_docker-compose
     restart: always
     depends_on:
       - webserver

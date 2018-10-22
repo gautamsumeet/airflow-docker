@@ -19,7 +19,7 @@ AIRFLOW_WORKER_DATABASE=0
 
 # Airflow base settings
 # SequentialExecutor, LocalExecutor, CeleryExecutor
-AIRFLOW_EXECUTOR=SequentialExecutor
+AIRFLOW_EXECUTOR=LocalExecutor
 AIRFLOW_EXAMPLES=False
 AIRFLOW_AUTH=False
 SQL_ALCHEMY_POOL_SIZE=5
